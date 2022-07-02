@@ -56,7 +56,7 @@ img {
 /* --------------------------------------------header----------------------------------------- */
 
 .container {
-  width: 1440px;
+  width: 1380px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -96,7 +96,6 @@ img {
 /* -------------------------------------hero section------------------------------- */
 
 .hero-section {
-  margin-bottom: 20px;
   position: relative;
   z-index: 111111;
   padding: 156px 0 249px;
@@ -164,12 +163,31 @@ img {
 /* ----------------------------------our section------------------------------------------------ */
 
 
+.our-section {
+  margin: 20px;
+  position: relative;
+  background-image: url("../images/our-s-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+.our-section ::after {
+  position: absolute;
+  left: calc(50% + 620px);
+  top: 900px;
+  width: 253px;
+  height: 213px;
+  background-image:   url("../images/barg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+}
+
 .our-content {
   margin: 0;
   margin-bottom: 20px;
-  background-image: url("../images/our-bg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+
 }
 
 .our-title {
@@ -219,8 +237,10 @@ img {
 
 
 /* ------------------------------us section------------------------------------------- */
+
+
 .us-section {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .us-inner {
@@ -270,11 +290,10 @@ img {
 }
 
 .us-list {
-  padding: 0 30px 80px;
+  padding-bottom: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 
@@ -304,6 +323,10 @@ img {
 
 
 /* ------------------------------------work section--------------------------- */
+
+.work-section {
+  margin: 20px;
+}
 
 .work-inner {
   position: relative;
