@@ -1,0 +1,461 @@
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+       url('../fonts/roboto-v30-latin-regular.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+       url('../fonts/roboto-v30-latin-500.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+       url('../fonts/roboto-v30-latin-700.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-image:  url("../images/barg.png");
+  background-repeat: no-repeat;
+  background-size: 402px 300px;               
+}
+
+img {
+  object-fit: cover;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* --------------------------------------------header----------------------------------------- */
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background-image: url(../images/cofe-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.header-link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+
+
+
+/* -------------------------------------hero section------------------------------- */
+
+.hero-section {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 111111;
+  padding: 156px 0 249px;
+  background-image: url("../images/cofe.png"), url(../images/cofe-bg.png);
+  background-repeat: no-repeat;
+  background-size: 710px 696px , 100%;
+  background-position: right, center;
+}
+.hero-section ::after{
+  position: absolute;
+  left: calc(50% - 25px);
+  top: -55px;
+  width: 160px;
+  height: 160px;
+  background-image: url("../images/but-cofe.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: '';
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-content {
+  margin-bottom: 24px;
+  width: 447px;
+}
+
+.hero-content {
+  width: 414px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+}
+
+.hero-text {
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.hero-link {
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  background: #0A775F;
+  border-radius: 100px;
+  color: #FFFFFF;
+}
+
+
+
+/* ----------------------------------our section------------------------------------------------ */
+
+
+.our-content {
+  margin: 0;
+  margin-bottom: 20px;
+  background-image: url("../images/our-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.our-title {
+  margin: 0;
+  padding: 50px 0 80px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: small-caps;
+  color: #000000;
+}
+
+.our-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-item:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.item-content {
+  margin-left: 117px;
+  width: 453px;
+}
+
+.item-title {
+  padding-bottom: 10px;;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  font-variant: small-caps;
+  color: #333333;
+}
+
+.item-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #333333;
+}
+
+
+
+
+/* ------------------------------us section------------------------------------------- */
+.us-section {
+  padding: 20px;
+}
+
+.us-inner {
+  position: relative;
+  background-image:  url(../images/us-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.us-inner ::after{
+  position: absolute;
+  left: calc(50% - 720px);
+  top: +230px;
+  width: 140px;
+  height: 144px;
+  background-image: url("../images/us-bg1.png");
+  background-repeat: no-repeat;
+  background-size: 140px 144px;
+  content: '';
+}
+
+.us-content {
+  margin: 0 auto;
+  padding: 50px 30px 0 30px;
+  width: 582px;
+}
+
+.us-title {   
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: small-caps;
+  color: #FFFFFF;
+}
+
+.us-text {
+  padding-bottom: 80px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.us-list {
+  padding: 0 30px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+
+.item-title {
+  padding-top: 28px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  font-variant: small-caps;
+  color: #333333;
+}
+
+.list-item-content {
+  width: 377px;
+}
+
+.item-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+
+
+
+/* ------------------------------------work section--------------------------- */
+
+.work-inner {
+  position: relative;
+  margin-bottom: 50px;
+  padding: 50px 30px;
+  background-image: url("../images/work-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+
+.work-inner::after {
+  position: absolute;
+  left: calc(50% + 380px);
+  top: 35px;
+  width: 263px;
+  height: 200px;
+  background-image: url("../images/coffeeee.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+}
+
+.work-title {
+  padding-bottom: 80px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: small-caps; 
+  color: #FFFFFF;
+}
+
+.work-content {
+  margin-bottom: 20px;
+  width: 966px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../images/work-bg2.png");
+  background-repeat: no-repeat;
+  background-size: 940px;
+  background-position: center right;
+}
+
+.work-list {
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-item {
+  padding: 20px 20px 40px;
+  width: 433px;
+  background-color: #F8F8F2;;
+}
+
+.work-span {
+  padding-bottom: 45px;
+  display: block;
+  text-align: end;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  font-variant: small-caps;
+  color: #333333;
+  opacity: 0.8;
+}
+
+.title-content {
+  padding-bottom: 10px;
+  width: 251px;
+}
+
+.work-item-title {
+  padding: 0; 
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  font-variant: small-caps;
+  color: #333333;
+}
+
+.text-content {
+  width: 385px;
+}
+
+.item-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.works-link {
+  text-align: center;
+}
+
+.work-link {
+  padding: 16px 24px;
+  background: #C99B67;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  color: #FFFFFF; 
+}
+
+
+
+
+/* ------------------------------------------footer-------------------------------------------- */
+
+
+.site-footer {
+  padding: 65px 50px;
+  background-image: url(../images/cofe-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.item-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* --------------------------------------------TUGADI---------------------------------------------- */
