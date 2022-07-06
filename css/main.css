@@ -90,6 +90,13 @@ img {
   color: #333333;
 }
 
+.header-link:hover {
+  color: darkcyan;
+}
+
+.header-link:active {
+  color: #F8F8F2; 
+}
 
 
 
@@ -158,6 +165,15 @@ img {
   color: #FFFFFF;
 }
 
+.hero-link:hover {
+  background-color: white;
+  color: darkcyan;
+}
+
+.hero-link:active {
+  background-color: #909090;
+  color: #222;
+}
 
 
 /* ----------------------------------our section------------------------------------------------ */
@@ -439,7 +455,15 @@ img {
   color: #FFFFFF; 
 }
 
-
+.work-link:hover {
+  background-color: white;
+  color: #C99B67;
+}
+  
+.work-link:active {
+  background-color: aquamarine;
+  color: #222;
+}
 
 
 /* ------------------------------------------footer-------------------------------------------- */
@@ -474,10 +498,66 @@ img {
   color: #333333;
 }
 
+
+.item-link:hover {
+  color: darkcyan;
+}
+
+.item-link:active {
+  color: #F8F8F2; 
+}
+
+
 .footer-content {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+
+
+.facebook-link {
+  fill: rgb(59, 71, 203);
+}
+
+.facebook-link:hover {
+  background-color: white;
+  opacity: 0.8;
+}
+
+.facebook-link:active {
+  opacity: 0.2;
+}
+
+
+
+.twitter-link {
+  fill: white;
+}
+
+.twitter-link:hover {
+  fill: rgb(75, 168, 248);
+}
+
+.twitter-link:active {
+  opacity: 0.2;
+}
+
+
+
+.instagram-link {
+  fill: #EE475F;
+
+}
+
+.instagram-link:hover {
+  background-color: #e7a10aab;
+  border-radius: 9px;
+  opacity: 0.8;
+}
+
+.instagram-link:active {
+  opacity: 0.2;
 }
 
 
